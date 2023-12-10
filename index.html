@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Movie Website</title>
+  <link rel="stylesheet" href="./enhanced_movie_website.css">
+</head>
+<body>
+  <header>
+    <div class="logo">MovieMania</div>
+    <nav>
+      <ul>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#genres">Genres</a></li>
+        <li><a href="#upcoming">Upcoming</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h2>Movie of the Week</h2>
+        <p>Description of the featured movie...</p>
+        <button id="watch-trailer">Watch Trailer</button>
+      </div>
+    </section>
+    <section id="featured" class="movie-category">
+      <h2>Featured Movies</h2>
+      <!-- Movie cards go here -->
+      <div class="movie-card" onclick="openModal('movie1')">
+        <img src="./movie1.jpg" alt="Movie 1 Cover">
+        <h3>Movie 1</h3>
+      </div>
+      <div class="movie-card" onclick="openModal('movie1')">
+        <img src="./movie4.jpg" alt="Movie 1 Cover">
+        <h3>Movie 1</h3>
+      </div>
+      <div class="movie-card" onclick="openModal('movie1')">
+        <img src="./movie4.jpg" alt="Movie 1 Cover">
+        <h3>Movie 1</h3>
+      </div>
+      <div class="movie-card" onclick="openModal('movie1')">
+        <img src="./movie4.jpg" alt="Movie 1 Cover">
+        <h3>Movie 1</h3>
+      </div>
+      <div class="movie-card" onclick="openModal('movie1')">
+        <img src="./movie4.jpg" alt="Movie 1 Cover">
+        <h3>Movie 1</h3>
+      </div>
+      <div class="movie-card" onclick="openModal('movie1')">
+        <img src="./movie4.jpg" alt="Movie 1 Cover">
+        <h3>Movie 1</h3>
+      </div>
+      <div class="movie-card" onclick="openModal('movie1')">
+        <img src="./movie4.jpg" alt="Movie 1 Cover">
+        <h3>Movie 1</h3>
+      </div>
+      <div class="movie-card" onclick="openModal('movie1')">
+        <img src="./movie4.jpg" alt="Movie 1 Cover">
+        <h3>Movie 1</h3>
+      </div>
+      
+      
+    </section>
+    <section id="genres" class="movie-category">
+      <h2>Browse by Genre</h2>
+      <!-- Movie cards go here -->
+      <div class="movie-card" onclick="openModal('movie1')">
+        <img src="./movie2.jpg" alt="Movie 1 Cover">
+        <h3>Movie 1</h3>
+      </div>
+    </section>
+    <section id="upcoming" class="movie-category">
+      <h2>Upcoming Releases</h2>
+      <!-- Movie cards go here -->
+      <div class="movie-card" onclick="openModal('movie1')">
+        <img src="./movie3.jpg" alt="Movie 1 Cover">
+        <h3>Movie 1</h3>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 MovieMania. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
