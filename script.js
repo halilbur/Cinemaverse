@@ -21,6 +21,20 @@ function displayMovies(movies, containerId) {
     movieContainer.appendChild(movieCard);
   });
 }
+function displayGenres(genres, containerId) {
+    const genreContainer = document.getElementById(containerId);
+  
+    genres.forEach(genre => {
+      const genreCard = document.createElement('div');
+      genreCard.className = 'genre-card';
+  
+      const genreName = document.createElement('h3');
+      genreName.textContent = genre.name;
+  
+      genreCard.appendChild(genreName);
+      genreContainer.appendChild(genreCard);
+    });
+  }
 
 fetch(apiUrlPopular)
   .then(response => response.json())
@@ -29,11 +43,11 @@ fetch(apiUrlPopular)
   })
   .catch(error => console.error('Error fetching popular movies:', error));
 
-fetch(apiUrlGenres)
+  fetch(apiUrlGenres)
   .then(response => response.json())
   .then(data => {
-    // For demonstration purposes, we'll display the first 10 genres as movie cards
-    displayMovies(data.genres.slice(0, 10), 'genres');
+    // For demonstration purposes, we'll display the first 10 genres as genre cards
+    displayGenres(data.genres.slice(0, 10), 'genres');
   })
   .catch(error => console.error('Error fetching genres:', error));
 

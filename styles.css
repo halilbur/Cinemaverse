@@ -88,7 +88,16 @@ nav a:hover {
 .movie-card h3 {
   text-align: center;
 }
-
+.genre-card {
+  padding: 2rem 1rem;
+  display: inline-block;
+  margin-right: 10px;
+ 
+}
+.genre-card h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
 footer {
   background-color: var(--primary-color);
   color: white;
