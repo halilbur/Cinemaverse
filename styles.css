@@ -1,4 +1,3 @@
-/* Enhance website style */
 :root {
   --primary-color: #0277bd; /* Main color for the website */
   --secondary-color: #ffe082; /* Accent color for buttons and links */
@@ -90,8 +89,6 @@ nav a:hover {
   text-align: center;
 }
 
-/* ...rest of your css */
-
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -106,4 +103,3 @@ footer {
   }
 }
 
-/* Additional styles */
