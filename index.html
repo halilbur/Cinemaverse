@@ -3,17 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CinemaVerse Website</title>
+  <title>CinemaVerse</title>
+  <link rel="icon" type="icon" href="./favicon.ico">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header>
-    <div class="logo">CinemaVerse</div>
+    <a href="index.html">
+      <div class="logo">CinemaVerse</div>
+    </a>
+    <div class="genre-select-container">
+      <label style="color:white;" for="genreSelect">Movie Genres:</label>
+      <select id="genreSelect">
+        <!-- Options will be populated here -->
+      </select>
+    </div>
     <nav>
       <ul>
-        <li><a href="#featured">Featured</a></li>
-        <li><a href="#genres">Genres</a></li>
-        <li><a href="#upcoming">Upcoming</a></li>
+        <li><a href="#trending">Trend Movies</a></li>
+        <li><a href="#upcoming">Upcoming Movies</a></li>
+        <li><a href="#nowplaying">Now Playing Movies</a></li>
       </ul>
     </nav>
     <div class="search-wrapper">
@@ -23,47 +32,9 @@
     </div>
   </header>
   <main id="main">
-    <div class="movie">
-        <img src="./theater_seat1.jpg" alt="Image">
-        <div class="movie-info">
-            <h3>Movie Title</h3>
-            <span class="green">9.8</span>
-        </div>
-        <div class="overview">
-          <h3>Overview</h3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Praesent vestibulum rhoncus magna, ut fringilla lorem aliquet in. 
-
-        </div>
-    </div>
-    <div class="movie">
-      <img src="./theater_seat1.jpg" alt="Image">
-      <div class="movie-info">
-          <h3>Movie Title</h3>
-          <span class="green">9.8</span>
-      </div>
-      <div class="overview">
-        <h3>Overview</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Praesent vestibulum rhoncus magna, ut fringilla lorem aliquet in. 
-
-      </div>
-  </div>
-  <div class="movie">
-    <img src="./theater_seat1.jpg" alt="Image">
-    <div class="movie-info">
-        <h3>Movie Title</h3>
-        <span class="green">9.8</span>
-    </div>
-    <div class="overview">
-      <h3>Overview</h3>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Praesent vestibulum rhoncus magna, ut fringilla lorem aliquet in. 
-
-    </div>
-</div>
 
   </main>
+
   <footer>
     <p>&copy; 2023 CinemaVerse Website. All rights reserved.</p>
   </footer>
